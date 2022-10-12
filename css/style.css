@@ -3464,7 +3464,7 @@ input[type="button"].btn-block {
   display: block;
   min-height: 1.5rem;
   padding-left: 1.5rem;
-  color-adjust: exact;
+  /* color-adjust: exact; */
 }
 
 .custom-control-inline {
@@ -9252,7 +9252,7 @@ a.text-primary:hover, a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #F3F6FF !important;
+  color: var(--secondary) !important;
 }
 
 a.text-secondary:hover, a.text-secondary:focus {
@@ -9589,6 +9589,11 @@ h4, h5, h6 {
 
 .bg-gallery {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/gallery.jpg), no-repeat center center;
+  background-size: cover;
+}
+
+.bg-gallery2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/pic4.jpg), no-repeat center center;
   background-size: cover;
 }
 
