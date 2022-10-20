@@ -1,860 +1,834 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Off Grid Energy Services</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-<head>
-    <meta charset="utf-8">
-    <title>Off Grid Energy Services</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <!-- Favicon -->
+        <link href="https://media-exp1.licdn.com/dms/image/C560BAQFfRaAljrqhcg/company-logo_200_200/0/1632254288452?e=2147483647&v=beta&t=EOEVq43bYsu5P7TNKIBfOiBf6Mo_b24uLxovtwA8gWs" rel="icon">
 
-    <!-- Favicon -->
-    <link href="https://media-exp1.licdn.com/dms/image/C560BAQFfRaAljrqhcg/company-logo_200_200/0/1632254288452?e=2147483647&v=beta&t=EOEVq43bYsu5P7TNKIBfOiBf6Mo_b24uLxovtwA8gWs" rel="icon">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    
-    <!-- Navbar Start -->
-    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5 border-bottom" style="border-color: #FAAD10 !important;">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="display-4 text-white text-uppercase m-0">Off Grid</h1>
-        </a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-            <div class="navbar-nav ml-auto py-0">
-                <!-- <a href="#home" class="nav-item nav-link active">Home</a> -->
-                <a href="#problem" class="nav-item nav-link">Information</a>
-                <!-- <a href="#why" class="nav-item nav-link">Why Off Grid?</a> -->
-                <a href="#service" class="nav-item nav-link">Plans</a>
-            </div>
-            <a href="#" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block">
+    <body data-spy="scroll" data-target=".navbar" data-offset="51">
+        <!-- Navbar Start -->
+        <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5 border-bottom" style="border-color: #FAAD10 !important;">
+            <a href="index.html" class="navbar-brand d-block d-lg-none">
                 <h1 class="display-4 text-white text-uppercase m-0">Off Grid</h1>
             </a>
-            <div class="navbar-nav mr-auto py-0">
-                <a href="#proposal" class="nav-item nav-link">Proposal</a>
-                <!-- <a href="#installation" class="nav-item nav-link">Installation</a> -->
-                <a href="#contact" class="nav-item nav-link">Contact </a>
-                <!-- <a href="#systemAss" class="nav-item nav-link">Assumptions</a> -->
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto py-0">
+                    <a href="#problem" class="nav-item nav-link">Information</a>
+                    <a href="#service" class="nav-item nav-link">Plans</a>
+                </div>
+                <a href="#" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block nav-item nav-link">
+                    <h1 class="display-4 text-white text-uppercase m-0">Off Grid</h1>
+                </a>
+                <div class="navbar-nav mr-auto py-0">
+                    <a href="#proposal" class="nav-item nav-link">Proposal</a>
+                    <a href="#contact" class="nav-item nav-link">Contact </a>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- Navbar End -->
+        </nav>
+        <!-- Navbar End -->
 
-    <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-5 pb-5" id="home">
-        <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/pic1.jpg" style="object-fit: cover;">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-primary text-uppercase mb-4" style="letter-spacing: 3px;">Off Grid Energy Services</h4>
-                            <h3 class="display-2 font-secondary text-white mb-4">Innovative Solar Solution For Home</h3>
-                            <!-- <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Get A Quote</a> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="img/pic2.jpg" style="object-fit: cover;">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-primary text-uppercase mb-4" style="letter-spacing: 3px;">Off Grid Energy Services</h4>
-                            <h3 class="display-2 font-secondary text-white mb-4">Let The Sun Work For Your Home</h3>
-                            <!-- <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Get A Quote</a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
-                    <span class="carousel-control-prev-icon mt-3"></span>
-                </div>
-            </a>
-            <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
-                <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
-                    <span class="carousel-control-next-icon mt-3"></span>
-                </div>
-            </a>
-        </div>
-    </div>
-    <!-- Carousel End -->
-
-    <!-- Problem/Solution Start -->
-    <div class="container-fluid py-5" id="problem">
-        <div class="container py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
-                <h1 class="display-4"><span class="text-primary">The Good News</span> & The Bad News</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-6 border-right border-primary">
-                    <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
-                        <h3 class="mb-4">The Bad</h3>
-                        <h5 class="mb-3"><i class="fa fa-times text-danger mr-2"></i>Utility companies are monopolies that have complete control over pricing and service. When was the last time a monopoly was good for you and your family?</h5>
-                        <h5 class="mb-3"><i class="fa fa-times text-danger mr-2"></i>Utility prices continue to increase. Since 2000, the cost of electricity in America has increased by a whopping 64%.</h5>
-                        <h5 class="mb-3"><i class="fa fa-times text-danger mr-2"></i>As traditional sources of energy continue to get more expensive (including coal, gas, and oil), electricity rates will continue to rise.</h5>
-                        <h5 class="mb-0"><i class="fa fa-times text-danger mr-2"></i>We cannot continue to burn things to meet our energy needs. Past solutions are simply not sustainable for future generations.</h5>
-                    </div>
-                </div>
-                <div class="col-md-6 border-left border-primary">
-                    <div class="text-center text-md-left ml-md-3">
-                        <h3 class="mb-4 text-primary">The Good</h3>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Stop renting energy. Own it and build equity in your energy source instead.</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Save money on your energy bill and build credits by contributing electricity to the grid.</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Increase the value of your home by as much as $68,080.</h5>
-                        <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Eliminate the equivalent of 16,980 gallons of gasoline consumed and contribute the benefits of 2,500 trees planted over the life of your system.</h5>
-                        <h5 class="mb-0"><i class="fa fa-check text-success mr-2"></i>Reduce your carbon footprint by 2,500 pounds of CO2 emissions over the life of your system.</h5>
-                    </div>
-                </div>
-                <div class="col-md-12 text-center pt-3">
-                    <!-- <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" href="#contact">Get A Quote</a> -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Problem/Solution End -->
-
-    <!-- Why Start -->
-    <div class="container-fluid py-5" id="why">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <div class="col-lg-5">
-                    <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7">
-                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Why Off Grid?</h6>
-                    <h1 class="display-4 mb-3"><span class="text-primary">Vision</span></h1>
-                    <p>To provide the most compelling value in the solar energy industry. Value, as defined by our customers, means designing and installing the highest quality solar energy systems on time, safely, and with high customer satisfaction at a low cost.</p>
-                    <h1 class="display-4 mb-3"><span class="text-primary"></span>Mission</h1>
-                    <p>By providing unparalleled value, we will greatly accelerate the adoption of solar energy systems. This will give our customers, our communities, and our nation clean, abundant, low-cost, distributed, and renewable energy and will allow us to give back to the community.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Why End -->
-
-    <!-- Service Start -->
-    <div class="container-fluid py-5" id="service">
-        <div class="container py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Solar</h6>
-                <h1 class="font-secondary display-4">Plans</h1>
-                <!-- <input class="location" placeholder="Location"> -->
-            </div>
-            <div class="row">
-                <!-- Can run if statement that is based on area -->
-                <div class="col-lg-4 mb-3">
-                    <div class="product-item mb-2">
-                        <div class="product-img">
-                            <img class="img-fluid" src="img/gallery-1.jpg" alt="">
-                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#monthlySolarLease">
-                                <i class="fa fa-2x fa-plus text-white"></i>
-                            </a>
-                        </div>
-                        <div class="bg-secondary text-center p-4">
-                            <h3 class="m-0">Monthly Lease</h3>
-                        </div>
-                    </div>
-                </div>
-                <!-- Can run if statement that is based on area -->
-                <div class="col-lg-4 mb-3">
-                    <div class="product-item mb-2">
-                        <div class="product-img">
-                            <img class="img-fluid" src="img/gallery-2.jpg" alt="">
-                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#fullLease">
-                                <i class="fa fa-2x fa-plus text-white"></i>
-                            </a>
-                        </div>
-                        <div class="bg-secondary text-center p-4">
-                            <h3 class="m-0">Full Lease</h3>
-                        </div>
-                    </div>
-                </div>
-                <!-- Can run if statement that is based on area -->
-                <div class="col-lg-4 mb-3">
-                    <div class="product-item mb-2">
-                        <div class="product-img">
-                            <img class="img-fluid" src="img/gallery-3.jpg" alt="">
-                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#fullPurchase">
-                                <i class="fa fa-2x fa-plus text-white"></i>
-                            </a>
-                        </div>
-                        <div class="bg-secondary text-center p-4">
-                            <h3 class="m-0">Full Purchase</h3>
-                        </div>
-                    </div>
-                </div>
-                <!-- Can run if statement that is based on area -->
-                <div class="col-lg-4 mb-3">
-                    <div class="product-item mb-2">
-                        <div class="product-img">
-                            <img class="img-fluid" src="img/gallery-4.jpg" alt="">
-                            <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#monthlyLoan">
-                                <i class="fa fa-2x fa-plus text-white"></i>
-                            </a>
-                        </div>
-                        <div class="bg-secondary text-center p-3">
-                            <h3 class="m-0">Monthly Loan</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Proposal Start -->
-    <div class="container-fluid py-5" id="proposal">
-        <div class="container2 py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Payment</h6>
-                <h1 class="display-4">Terms</h1>
-            </div>
-            <div class="panel pricing-table">
-                <div class="pricing-plan">
-                    <h2 class="pricing-header text-secondary">Payment <h2 class="pricing-header">Breakdown</h2></h2>
-                    <ul class="pricing-features">
-                        <li class="pricing-features-item" style="list-style: none;">Pre-Incentive Payment <span class="pricing-price text-primary">$<span class="preIncentive">&nbsp;</span>/mo</span></li>
-                        <li class="pricing-features-item" style="list-style: none;">Post Incentive Payment (Remainder of term <span class="loanMonths">&nbsp;</span>)<span class="extraSmall lft">1</span> <span class="pricing-price text-primary">$<span class="preIncentive loanPay2x">&nbsp;</span>/mo</span></li>
-                        <li class="pricing-features-item" style="list-style: none;">Payment w/o Incentive Payment<span class="extraSmall lft">2</span><span class="pricing-price text-primary">$<span class="withoutIncentive">0</span>/mo</span></li>
-                    </ul>
-                    <br><br>
-                    <h2 class="pricing-header text-secondary">Available<h2 class="pricing-header"> Incentives</h2></h2>
-                    <ul class="pricing-features">
-                        <li class="pricing-features-item" style="list-style: none;">
-                            <div class="dpx">
-                                <div class='px'>
-                                    <label>Federal ITC <span class="pricing-price text-primary"><input type="checkbox" class="option-input checkbox" checked />$<span class="itc">&nbsp;</span></span></label>
-                                </div>
+        <!-- Carousel Start -->
+        <div class="container-fluid p-0 mb-5 pb-5" id="home">
+            <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="img/pic1.jpg" style="object-fit: cover;">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-4" style="letter-spacing: 3px;">Off Grid Energy Services</h4>
+                                <h3 class="display-2 font-secondary text-white mb-4">Innovative Solar Solution For Home</h3>
                             </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                    <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                        <img class="position-absolute w-100 h-100" src="img/pic2.jpg" style="object-fit: cover;">
+                        <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-primary text-uppercase mb-4" style="letter-spacing: 3px;">Off Grid Energy Services</h4>
+                                <h3 class="display-2 font-secondary text-white mb-4">Let The Sun Work For Your Home</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="legalPhrase">
-                <p class="smallFont">1**Assumes reinvestment of Federal ITC</p>
-                <p class="smallFont">2**New payment if tax credit is not applied to loan when received Tax credits are an estimated amount. As the purchaser and owner of a solar photovoltaic system, you may qualify for certain federal, state, local or other rebates, tax credits or incentives (collectively, "Incentives"). If you have any questions as to whether and when you qualify for any Incentives and the amount of such Incentives, please consult and discuss with your personal tax or financial advisor. <span class="companyName">&nbsp;</span> and the lenders used make no representation, warranty or guarantee as to the availability or amount of such incentives.</p>
-                <p class="smallFont">**No down payment required. The Annual Percentage Rate for a <span class="loanYears">&nbsp;</span> year loan is <span class="apr">&nbsp;</span>%. The amount of your first 17 payments will be $<span class="preIncentive">&nbsp;</span>. If you make a voluntary payment of your Federal ITC tax credit in month 18, your remaining payments will remain approximately $<span class="preIncentive loanPay2x">&nbsp;</span>. If a voluntary payment in excess of the tax credit of the loan amount is made by including the state tax credit or any other voluntary payment in month 18, the subsequent monthly payments will be reduced below $<span class="preIncentive loanPay2x">&nbsp;</span>. If no voluntary payment is made, the remaining payments will be $<span class="withoutIncentive">&nbsp;</span>. The loan and payment amounts included here are estimates. Final payment amounts will be included in your loan agreement.</p>
-            </div>
-        </div>
-
-        <div class="container2 py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Payment</h6>
-                <h1 class="display-4">Details</h1>
-            </div>
-            <div class="panel table3">
-                <div class="pricing-plan2">
-                    <h2 class="pricing-header">Loan Amount</h2>
-                    <span class="pricing-price">$<span class="loanAmount">&nbsp;</span></span>
-                </div>
-                <div class="pricing-plan2">
-                    <h2 class="pricing-header">Loan APR</h2>
-                    <span class="pricing-price"><span class="apr">&nbsp;</span>%</span>
-                </div>
-                <div class="pricing-plan2">
-                    <h2 class="pricing-header">Loan Term</h2>
-                    <span class="pricing-price"><span class="loanYears">&nbsp;</span> years</span>
-                </div>
-                <div class="pricing-plan2">
-                    <h2 class="pricing-header">Loan Payments</h2>
-                    <span class="pricing-price">$<span class="monthlyTotal">&nbsp;</span> / month</span>
-                </div>
-                <div class="pricing-plan2">
-                    <h2 class="pricing-header">Est. Existing Utility Bill</h2>
-                    <span class="pricing-price">$<span class="monthlyPowerBill">&nbsp;</span> / month</span>
-                </div>
-                <div class="pricing-plan2">
-                    <h2 class="pricing-header">Est. New Monthly Bill</h2>
-                    <span class="pricing-price">$<span class="newMonthlyBill">&nbsp;</span> / month</span>
-                </div>
-            </div>
-            <br>
-            <div class="legalPhrase">
-                <p class="smallFont">**The loan information on this proposal may not be an exact representation of your actual financing Loan Agreement.</p>
+                <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+                    <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                        <span class="carousel-control-prev-icon mt-3"></span>
+                    </div>
+                </a>
+                <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+                    <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                        <span class="carousel-control-next-icon mt-3"></span>
+                    </div>
+                </a>
             </div>
         </div>
+        <!-- Carousel End -->
 
-        <div class="container2 py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Estimated</h6>
-                <h1 class="display-4">Savings</h1>
-            </div>
-            <div class="panel pricing-table">
-                <div class="pricing-plan">
-                    <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
-                    <h2 class="pricing-header">Monthly Cost (Today)</h2>
-                    <ul class="pricing-features">
-                        <li class="pricing-features-item">Without Solar: $<span class="preSolar">&nbsp;</span></li>
-                        <li class="pricing-features-item">With Off Grid: $<span class="postSolar">&nbsp;</span></li>
-                    </ul>
-                    <span class="pricing-features-item2">Est. Savings/month</span>
-                    <span class="pricing-price">($<span class="difference">&nbsp;</span>)</span>
+        <!-- Problem/Solution Start -->
+        <div class="container-fluid py-5" id="problem">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+                    <h1 class="display-4"><span class="text-primary">The Good News</span> & The Bad News</h1>
                 </div>
-                <div class="pricing-plan">
-                    <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
-                    <h2 class="pricing-header">Monthly Cost (In 5 Years)</h2>
-                    <ul class="pricing-features">
-                        <li class="pricing-features-item">Without Solar: $<span class="preSolar60">&nbsp;</span></li>
-                        <li class="pricing-features-item">With Off Grid: $<span class="postSolar60">&nbsp;</span></li>
-                    </ul>
-                    <span class="pricing-features-item2">Est. Savings/month</span>
-                    <span class="pricing-price">($<span class="difference60">&nbsp;</span>)</span>
+                <div class="row">
+                    <div class="col-md-6 border-right border-primary">
+                        <div class="text-center text-md-right mr-md-3 mb-4 mb-md-0">
+                            <h3 class="mb-4">The Bad</h3>
+                            <h5 class="mb-3"><i class="fa fa-times text-danger mr-2"></i>Utility companies are monopolies that have complete control over pricing and service. When was the last time a monopoly was good for you and your family?</h5>
+                            <h5 class="mb-3"><i class="fa fa-times text-danger mr-2"></i>Utility prices continue to increase. Since 2000, the cost of electricity in America has increased by a whopping 64%.</h5>
+                            <h5 class="mb-3"><i class="fa fa-times text-danger mr-2"></i>As traditional sources of energy continue to get more expensive (including coal, gas, and oil), electricity rates will continue to rise.</h5>
+                            <h5 class="mb-0"><i class="fa fa-times text-danger mr-2"></i>We cannot continue to burn things to meet our energy needs. Past solutions are simply not sustainable for future generations.</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6 border-left border-primary">
+                        <div class="text-center text-md-left ml-md-3">
+                            <h3 class="mb-4 text-primary">The Good</h3>
+                            <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Stop renting energy. Own it and build equity in your energy source instead.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Save money on your energy bill and build credits by contributing electricity to the grid.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Increase the value of your home by as much as $68,080.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-success mr-2"></i>Eliminate the equivalent of 16,980 gallons of gasoline consumed and contribute the benefits of 2,500 trees planted over the life of your system.</h5>
+                            <h5 class="mb-0"><i class="fa fa-check text-success mr-2"></i>Reduce your carbon footprint by 2,500 pounds of CO2 emissions over the life of your system.</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-12 text-center pt-3">
+                    </div>
                 </div>
-                <div class="pricing-plan">
-                    <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
-                    <h2 class="pricing-header">Monthly Cost (In 25 Years)</h2>
-                    <ul class="pricing-features">
-                        <li class="pricing-features-item" id="woS">Without Solar: $<span class="preSolar300">&nbsp;</span></li>
-                        <li class="pricing-features-item" id="wS">With Off Grid: $<span class="postSolar300">&nbsp;</span></li>
-                    </ul>
-                    <span class="pricing-features-item2">Est. Savings/month</span>
-                    <span class="pricing-price">($<span class="difference300">&nbsp;</span>)</span>
-                </div>
-            </div>
-            <br>
-            <div class="legalPhrase">
-                <p class="smallFont">**This amount only represents electric service costs and does not include applicable taxes or other charges which may vary based on location, electricity provider and other factors.</p>
-                <p class="smallFont">**Includes a .5%/year system loss.</p>
             </div>
         </div>
+        <!-- Problem/Solution End -->
 
-        <div class="container-fluid py-5">
-            <div class="container py-5 panel pricing-table">
+        <!-- Why Start -->
+        <div class="container-fluid py-5" id="why">
+            <div class="container py-5">
                 <div class="row align-items-center">
                     <div class="col-lg-5">
-                        <img class="img-fluid mb-4 mb-lg-0" src="img/pic4.jpg" alt="">
+                        <img class="img-fluid mb-4 mb-lg-0" src="img/about.jpg" alt="">
                     </div>
                     <div class="col-lg-7">
-                        <h1 class="display-4 mb-3"><span class="text-primary">System <span class="text-secondary">Design</span></span></h1>
-                        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">System Size</h6>
-                        <p><span class="systemSize text-secondary">&nbsp;</span> kW DC</p>
-                        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Estimated monthly production</h6>
-                        <p><span class="estMonthProd text-secondary">&nbsp;</span> kWh AC</p>
-                        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Utility bill offset</h6>
-                        <p><span class="utilityBillOffset text-secondary">&nbsp;</span>%</p>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="legalPhrase">
-                <p class="smallFont">**Final Design may be adjusted to meet local jurisdiction requirements.</p>
-            </div>
-        </div>
-    </div>
-    <!-- Proposal End -->
-
-    <!-- Installation Start -->
-    <!-- <div class="container-fluid bg-gallery border-top border-bottom" id="installation" style="padding: 120px 0; margin: 90px 0; border-color: #FAAD10 !important;">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">High-Quality</h6>
-            <h1 class="font-secondary display-4 text-white">Installation</h1>
-            <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" type="button" data-toggle="modal" data-target="#exampleModalLong">Read More</a>
-        </div>
-        <p class="smallFont" style="display: flex; justify-content: center; text-align: center;">Final Design may be adjusted to meet local jurisdiction requirements.</p>
-    </div> -->
-    <!-- Installation End -->
-
-    <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
-        <div class="container py-5">
-            <div class="section-title position-relative text-center">
-                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Contact</h6>
-                <h1 class="font-secondary display-4">Get In Touch</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="contact-form">
-                        <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
-                            <div class="form-row">
-                                <div class="col-sm-6 control-group">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="fname" placeholder="First Name" required="required" data-validation-required-message="Please enter your first name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="col-sm-6 control-group">
-                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="lname" placeholder="Last Name" required="required" data-validation-required-message="Please enter your last name" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="col-sm-6 control-group">
-                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="col-sm-6 control-group">
-                                    <input type="tel" class="form-control bg-secondary border-0 py-4 px-3" id="phone" placeholder="Mobile Phone Number" required="required" data-validation-required-message="Please enter a valid phone number" />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="control-group">
-                                <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="control-group">
-                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
-                                <p class="help-block text-danger"></p>
-                            </div>
-                            <div class="text-center">
-                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
-                            </div>
-                        </form>
+                        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Why Off Grid?</h6>
+                        <h1 class="display-4 mb-3"><span class="text-primary">Vision</span></h1>
+                        <p>To provide the most compelling value in the solar energy industry. Value, as defined by our customers, means designing and installing the highest quality solar energy systems on time, safely, and with high customer satisfaction at a low cost.</p>
+                        <h1 class="display-4 mb-3"><span class="text-primary"></span>Mission</h1>
+                        <p>By providing unparalleled value, we will greatly accelerate the adoption of solar energy systems. This will give our customers, our communities, and our nation clean, abundant, low-cost, distributed, and renewable energy and will allow us to give back to the community.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact End -->
+        <!-- Why End -->
 
-    <!-- System Assumptions Start -->
-    <!-- <div class="container-fluid bg-gallery2 border-top border-bottom" id="systemAss" style="padding: 120px 0; margin: 90px 0; border-color: #FAAD10 !important;">
-        <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
-            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
-            <h1 class="font-secondary display-4 text-white">System Assumptions</h1>
-            <a class="btn btn-primary font-weight-bold py-3 px-5 mt-4 btn-scroll" type="button" data-toggle="modal" data-target="#howModal">Read More</a>
-        </div>
-    </div> -->
-    <!-- System Assumptions End -->
-
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5 border-top" style="margin-top: 90px; border-color: #FAAD10 !important;">
-        <div class="row pt-5">
-            <div class="col-12 mb-4 px-4">
-                <div class="row mb-5 p-4" style="background: #0E5A86;">
-                    <div class="col-md-4">
-                        <div class="text-md-center">
-                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Our Office</h5>
-                            <a href="https://www.google.com/maps/place/1261+S+820+E+%23300,+American+Fork,+UT+84003/@40.3525905,-111.7751376,17z/data=!4m6!3m5!1s0x874d83edbc3eb30b:0x8ed0438c178c9645!8m2!3d40.3525905!4d-111.7751376!10e3" target="_blank">1261 S 820 E Suite 300 American Fork, UT, 84003</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-md-center">
-                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Email Us</h5>
-                            <p class="mb-4 m-md-0">info@offgridenergyservices.com</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="text-md-center">
-                            <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Call Us</h5>
-                            <p class="m-0">(385) 421-5800</p>
-                        </div>
-                    </div>
+        <!-- Service Start -->
+        <div class="container-fluid py-5" id="service">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Solar</h6>
+                    <h1 class="font-secondary display-4">Plans</h1>
+                    <!-- <input id="input" onsubmit="takeInput()" class="location" placeholder="Location"> -->
                 </div>
-            </div>
-            <div class="col-lg-7 col-md-12">
                 <div class="row">
-                    <div class="col-md-6 mb-5">
-                        <p>Check us out on social media!</p>
-                        <div class="d-flex justify-content-start mt-4">
-                            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                    <!-- Can run if statement that is based on area -->
+                    <div class="col-lg-4 mb-3">
+                        <div class="product-item mb-2">
+                            <div class="product-img">
+                                <img class="img-fluid" src="img/gallery-1.jpg" alt="">
+                                <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#monthlySolarLease">
+                                    <i class="fa fa-2x fa-plus text-white"></i>
+                                </a>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h3 class="m-0">Monthly Lease</h3>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6 mb-5">
-                        <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Content</h5>
-                        <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white btn-scroll mb-2" href="https://offgridenergyservices.com/" target="_blank"><i class="fa fa-angle-right mr-2"></i>Home Page</a>
-                            <a class="text-white btn-scroll mb-2" href="#problem"><i class="fa fa-angle-right mr-2"></i>You Should Know</a>
-                            <a class="text-white btn-scroll mb-2" href="#why"><i class="fa fa-angle-right mr-2"></i>Why Off Grid?</a>
-                            <a class="text-white btn-scroll mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Solar Plans</a>
-                            <!-- <a class="text-white btn-scroll mb-2" href="#installation"><i class="fa fa-angle-right mr-2"></i>Installation</a> -->
-                            <a class="text-white btn-scroll mb-2" href="#contact"><i class="fa fa-angle-right mr-2"></i>Contact</a>
-                            <!-- <a class="text-white btn-scroll mb-2" href="#systemAss"><i class="fa fa-angle-right mr-2"></i>System Assumptions</a> -->
+                    <!-- Can run if statement that is based on area -->
+                    <div class="col-lg-4 mb-3">
+                        <div class="product-item mb-2">
+                            <div class="product-img">
+                                <img class="img-fluid" src="img/gallery-2.jpg" alt="">
+                                <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#fullLease">
+                                    <i class="fa fa-2x fa-plus text-white"></i>
+                                </a>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h3 class="m-0">Full Lease</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Can run if statement that is based on area -->
+                    <div class="col-lg-4 mb-3">
+                        <div class="product-item mb-2">
+                            <div class="product-img">
+                                <img class="img-fluid" src="img/gallery-3.jpg" alt="">
+                                <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#fullPurchase">
+                                    <i class="fa fa-2x fa-plus text-white"></i>
+                                </a>
+                            </div>
+                            <div class="bg-secondary text-center p-4">
+                                <h3 class="m-0">Full Purchase</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Can run if statement that is based on area -->
+                    <div class="col-lg-4 mb-3">
+                        <div class="product-item mb-2">
+                            <div class="product-img">
+                                <img class="img-fluid" src="img/gallery-4.jpg" alt="">
+                                <a type="button" class="btn btn-primary" data-toggle="modal" data-target="#monthlyLoan">
+                                    <i class="fa fa-2x fa-plus text-white"></i>
+                                </a>
+                            </div>
+                            <div class="bg-secondary text-center p-3">
+                                <h3 class="m-0">Monthly Loan</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-5 col-md-12 mb-5">
-                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-                <p>Off Grid Energy needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our <a href="https://offgridenergyservices.com/privacy-policy/" target="_blank" alt="...">Privacy Policy</a>.</p>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-4">Sign Up</button>
+        </div>
+        <!-- Service End -->
+
+        <!-- Proposal Start -->
+        <div class="container-fluid py-5" id="proposal">
+            <div class="container2 py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Payment</h6>
+                    <h1 class="display-4">Terms</h1>
+                </div>
+                <div class="panel pricing-table">
+                    <div class="pricing-plan">
+                        <h2 class="pricing-header text-secondary">Payment <h2 class="pricing-header">Breakdown</h2></h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item" style="list-style: none;">Pre-Incentive Payment <span class="pricing-price text-primary">$<span class="preIncentive">&nbsp;</span>/mo</span></li>
+                            <li class="pricing-features-item" style="list-style: none;">Post Incentive Payment (Remainder of term <span class="loanMonths">&nbsp;</span>)<span class="extraSmall lft">1</span> <span class="pricing-price text-primary">$<span class="preIncentive loanPay2x">&nbsp;</span>/mo</span></li>
+                            <li class="pricing-features-item" style="list-style: none;">Payment w/o Incentive Payment<span class="extraSmall lft">2</span><span class="pricing-price text-primary">$<span class="withoutIncentive">0</span>/mo</span></li>
+                        </ul>
+                        <br><br>
+                        <h2 class="pricing-header text-secondary">Available<h2 class="pricing-header"> Incentives</h2></h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item" style="list-style: none;">
+                                <div class="dpx">
+                                    <div class='px'>
+                                        <label>Federal ITC <span class="pricing-price text-primary"><input type="checkbox" class="option-input checkbox" checked />$<span class="itc">&nbsp;</span></span></label>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <br>
+                <div class="legalPhrase">
+                    <p class="smallFont">1**Assumes reinvestment of Federal ITC</p>
+                    <p class="smallFont">2**New payment if tax credit is not applied to loan when received Tax credits are an estimated amount. As the purchaser and owner of a solar photovoltaic system, you may qualify for certain federal, state, local or other rebates, tax credits or incentives (collectively, "Incentives"). If you have any questions as to whether and when you qualify for any Incentives and the amount of such Incentives, please consult and discuss with your personal tax or financial advisor. <span class="companyName">&nbsp;</span> and the lenders used make no representation, warranty or guarantee as to the availability or amount of such incentives.</p>
+                    <p class="smallFont">**No down payment required. The Annual Percentage Rate for a <span class="loanYears">&nbsp;</span> year loan is <span class="apr">&nbsp;</span>%. The amount of your first 17 payments will be $<span class="preIncentive">&nbsp;</span>. If you make a voluntary payment of your Federal ITC tax credit in month 18, your remaining payments will remain approximately $<span class="preIncentive loanPay2x">&nbsp;</span>. If a voluntary payment in excess of the tax credit of the loan amount is made by including the state tax credit or any other voluntary payment in month 18, the subsequent monthly payments will be reduced below $<span class="preIncentive loanPay2x">&nbsp;</span>. If no voluntary payment is made, the remaining payments will be $<span class="withoutIncentive">&nbsp;</span>. The loan and payment amounts included here are estimates. Final payment amounts will be included in your loan agreement.</p>
+                </div>
+            </div>
+
+            <div class="container2 py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Payment</h6>
+                    <h1 class="display-4">Details</h1>
+                </div>
+                <div class="panel table3">
+                    <div class="pricing-plan2">
+                        <h2 class="pricing-header">Loan Amount</h2>
+                        <span class="pricing-price">$<span class="loanAmount">&nbsp;</span></span>
+                    </div>
+                    <div class="pricing-plan2">
+                        <h2 class="pricing-header">Loan APR</h2>
+                        <span class="pricing-price"><span class="apr">&nbsp;</span>%</span>
+                    </div>
+                    <div class="pricing-plan2">
+                        <h2 class="pricing-header">Loan Term</h2>
+                        <span class="pricing-price"><span class="loanYears">&nbsp;</span> years</span>
+                    </div>
+                    <div class="pricing-plan2">
+                        <h2 class="pricing-header">Loan Payments</h2>
+                        <span class="pricing-price">$<span class="monthlyTotal">&nbsp;</span> / month</span>
+                    </div>
+                    <div class="pricing-plan2">
+                        <h2 class="pricing-header">Est. Existing Utility Bill</h2>
+                        <span class="pricing-price">$<span class="monthlyPowerBill">&nbsp;</span> / month</span>
+                    </div>
+                    <div class="pricing-plan2">
+                        <h2 class="pricing-header">Est. New Monthly Bill</h2>
+                        <span class="pricing-price">$<span class="newMonthlyBill">&nbsp;</span> / month</span>
+                    </div>
+                </div>
+                <br>
+                <div class="legalPhrase">
+                    <p class="smallFont">**The loan information on this proposal may not be an exact representation of your actual financing Loan Agreement.</p>
+                </div>
+            </div>
+
+            <div class="container2 py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Estimated</h6>
+                    <h1 class="display-4">Savings</h1>
+                </div>
+                <div class="panel pricing-table">
+                    <div class="pricing-plan">
+                        <img src="https://s22.postimg.cc/8mv5gn7w1/paper-plane.png" alt="" class="pricing-img">
+                        <h2 class="pricing-header">Monthly Cost (Today)</h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item">Without Solar: $<span class="preSolar">&nbsp;</span></li>
+                            <li class="pricing-features-item">With Off Grid: $<span class="postSolar">&nbsp;</span></li>
+                        </ul>
+                        <span class="pricing-features-item2">Est. Savings/month</span>
+                        <span class="pricing-price">($<span class="difference">&nbsp;</span>)</span>
+                    </div>
+                    <div class="pricing-plan">
+                        <img src="https://s28.postimg.cc/ju5bnc3x9/plane.png" alt="" class="pricing-img">
+                        <h2 class="pricing-header">Monthly Cost (In 5 Years)</h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item">Without Solar: $<span class="preSolar60">&nbsp;</span></li>
+                            <li class="pricing-features-item">With Off Grid: $<span class="postSolar60">&nbsp;</span></li>
+                        </ul>
+                        <span class="pricing-features-item2">Est. Savings/month</span>
+                        <span class="pricing-price">($<span class="difference60">&nbsp;</span>)</span>
+                    </div>
+                    <div class="pricing-plan">
+                        <img src="https://s21.postimg.cc/tpm0cge4n/space-ship.png" alt="" class="pricing-img">
+                        <h2 class="pricing-header">Monthly Cost (In 25 Years)</h2>
+                        <ul class="pricing-features">
+                            <li class="pricing-features-item" id="woS">Without Solar: $<span class="preSolar300">&nbsp;</span></li>
+                            <li class="pricing-features-item" id="wS">With Off Grid: $<span class="postSolar300">&nbsp;</span></li>
+                        </ul>
+                        <span class="pricing-features-item2">Est. Savings/month</span>
+                        <span class="pricing-price">($<span class="difference300">&nbsp;</span>)</span>
+                    </div>
+                </div>
+                <br>
+                <div class="legalPhrase">
+                    <p class="smallFont">**This amount only represents electric service costs and does not include applicable taxes or other charges which may vary based on location, electricity provider and other factors.</p>
+                    <p class="smallFont">**Includes a .5%/year system loss.</p>
+                </div>
+            </div>
+
+            <div class="container-fluid py-5">
+                <div class="container py-5 panel pricing-table">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <img class="img-fluid mb-4 mb-lg-0" src="img/pic4.jpg" alt="">
+                        </div>
+                        <div class="col-lg-7">
+                            <h1 class="display-4 mb-3"><span class="text-primary">System <span class="text-secondary">Design</span></span></h1>
+                            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">System Size</h6>
+                            <p><span class="systemSize text-secondary">&nbsp;</span> kW DC</p>
+                            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Estimated monthly production</h6>
+                            <p><span class="estMonthProd text-secondary">&nbsp;</span> kWh AC</p>
+                            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Utility bill offset</h6>
+                            <p><span class="utilityBillOffset text-secondary">&nbsp;</span>%</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="legalPhrase">
+                    <p class="smallFont">**Final Design may be adjusted to meet local jurisdiction requirements.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Proposal End -->
+
+        <!-- Contact Start -->
+        <div class="container-fluid py-5" id="contact">
+            <div class="container py-5">
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Contact</h6>
+                    <h1 class="font-secondary display-4">Get In Touch</h1>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-form">
+                            <div id="success"></div>
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                <div class="form-row">
+                                    <div class="col-sm-6 control-group">
+                                        <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="fname" placeholder="First Name" required="required" data-validation-required-message="Please enter your first name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-sm-6 control-group">
+                                        <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="lname" placeholder="Last Name" required="required" data-validation-required-message="Please enter your last name" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-sm-6 control-group">
+                                        <input type="email" class="form-control bg-secondary border-0 py-4 px-3" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="col-sm-6 control-group">
+                                        <input type="tel" class="form-control bg-secondary border-0 py-4 px-3" id="phone" placeholder="Mobile Phone Number" required="required" data-validation-required-message="Please enter a valid phone number" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="control-group">
+                                    <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="6" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="text-center">
+                                    <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit" id="sendMessageButton">Send Message</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid bg-dark text-white text-center border-top py-4 px-sm-3 px-md-5" style="border-color: #FAAD10 !important;">
-        <p class="m-0 text-white">Copyright &copy; 2022 Off Grid Energy Services. All rights reserved.</p>
-        <a href="https://offgridenergyservices.com/privacy-policy/" target="_blank" alt="...">Privacy</a>
-    </div>
-    <!-- Footer End -->
+        <!-- Contact End -->
 
-    <!-- Installation Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Off Grid Energy Installation</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white py-5 px-sm-3 px-lg-5 border-top" style="margin-top: 90px; border-color: #FAAD10 !important;">
+            <div class="row pt-5">
+                <div class="col-12 mb-4 px-4">
+                    <div class="row mb-5 p-4" style="background: #0E5A86;">
+                        <div class="col-md-4">
+                            <div class="text-md-center">
+                                <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Our Office</h5>
+                                <a href="https://www.google.com/maps/place/1261+S+820+E+%23300,+American+Fork,+UT+84003/@40.3525905,-111.7751376,17z/data=!4m6!3m5!1s0x874d83edbc3eb30b:0x8ed0438c178c9645!8m2!3d40.3525905!4d-111.7751376!10e3" target="_blank">1261 S 820 E Suite 300 American Fork, UT, 84003</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-md-center">
+                                <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Email Us</h5>
+                                <p class="mb-4 m-md-0">info@offgridenergyservices.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="text-md-center">
+                                <h5 class="text-primary text-uppercase mb-2" style="letter-spacing: 5px;">Call Us</h5>
+                                <p class="m-0">(385) 421-5800</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <img class="img-fluid mb-4" src="img/carousel-1.jpg" alt="">
-                    <p>Off Grid Energy provides the fastest and highest-quality installation in the industry.</p>
-                    <p>With over 15,000 installations to date, our in-house crews are a cut above any other provider.</p>
-                    <p>We use top-quality materials, have a rigorous quality assurance program, and back it up with a workmanship guarantee.</p>
-                    <p>We install our premium panels using a low-profile racking system and run conduit on the interior of the home whenever possible to give your home an attractive, modern upgrade.</p>
+                <div class="col-lg-7 col-md-12">
+                    <div class="row">
+                        <div class="col-md-6 mb-5">
+                            <p>Check us out on social media!</p>
+                            <div class="d-flex justify-content-start mt-4">
+                                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg btn-outline-light btn-lg-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                <a class="btn btn-lg btn-outline-light btn-lg-square" href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-5">
+                            <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Content</h5>
+                            <div class="d-flex flex-column justify-content-start">
+                                <a class="text-white btn-scroll mb-2" href="https://offgridenergyservices.com/" target="_blank"><i class="fa fa-angle-right mr-2"></i>Home Page</a>
+                                <a class="text-white btn-scroll mb-2" href="#problem"><i class="fa fa-angle-right mr-2"></i>You Should Know</a>
+                                <a class="text-white btn-scroll mb-2" href="#why"><i class="fa fa-angle-right mr-2"></i>Why Off Grid?</a>
+                                <a class="text-white btn-scroll mb-2" href="#service"><i class="fa fa-angle-right mr-2"></i>Solar Plans</a>
+                                <a class="text-white btn-scroll mb-2" href="#proposal"><i class="fa fa-angle-right mr-2"></i>Proposal</a>
+                                <a class="text-white btn-scroll mb-2" href="#contact"><i class="fa fa-angle-right mr-2"></i>Contact</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-
-    <!-- System Assumptions Modal -->
-    <div class="modal fade" id="howModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">System Assumptions</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <u><h5>Utility Assumptions</h5></u>
-                    <p>Utility Company: <u>Idaho Power</u></p>
-                    <p>Current Annual Consumption: <u>9,684 kWh</u></p>
-                    <p>Current Estimated Annual Utility Bill: <u>$997</u></p>
-                    <p>Current Estimated cost per kWh: <u>$0.103</u></p>
-                    <p>Annual Utility Price Escalator: <u>3.5%</u></p>
-                    <u><h5>System Assumptions</h5></u>
-                    <p>System Size (kW): <u>5.6 kW DC</u></p>
-                    <p>Year 1 System Production (kWh): <u>7,713 kWh</u></p>
-                    <p>Annual System Degradation: <u>0.25%</u></p>
-                    <p>25-Year System Production (kWh): <u>187,150 kWh</u></p>
-                    <p>Estimated Offset: <u>100%</u></p>
-                    <u><h5>System Cost Assumptions</h5></u>
-                    <p>Total System Cost: <u>$29,514</u></p>
-                    <p>Off Grid Solar Referral Promotion: <u>($500)</u></p>
-                    <p>Down Payment: <u>$0</u></p>
-                    <p>Total Loan Amount: <u>$29,014</u></p>
-                    <p>Federal Tax Incentive ($): <u>$7,544</u></p>
-                    <p>State Tax Incentive ($): <u>$0</u></p>
-                    <p>Other Incentive: <u>$0</u></p>
-                    <p>APR: <u>1.98%</u></p>
-                    <p>Loan Term: <u>25</u></p>
-                    <p>Assumed Payment by Month 18: <u>$7,544</u></p>
-                    <p>SmartStart Months 19-60 Rebate: <u>$47.41/month</u></p>
+                <div class="col-lg-5 col-md-12 mb-5">
+                    <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
+                    <p>Off Grid Energy needs the contact information you provide to us to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our <a href="https://offgridenergyservices.com/privacy-policy/" target="_blank" alt="...">Privacy Policy</a>.</p>
+                    <div class="w-100">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary px-4">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal -->
+        <div class="container-fluid bg-dark text-white text-center border-top py-4 px-sm-3 px-md-5" style="border-color: #FAAD10 !important;">
+            <p class="m-0 text-white">Copyright &copy; 2022 Off Grid Energy Services. All rights reserved.</p>
+            <a href="https://offgridenergyservices.com/privacy-policy/" target="_blank" alt="...">Privacy</a>
+        </div>
+        <!-- Footer End -->
 
-    <!-- Monthly Loan Modal -->
-    <div class="modal fade" id="monthlyLoan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Monthly Solar Loan from Off Grid Energy</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img class="img-fluid mb-4" src="img/carousel-2.jpg" alt="">
-                    <p>Purchasing your own home solar system is within reach. When you go solar with Off Grid Energy's monthly solar loan, cost doesn't have to be a barrier. You can get a custom solar system with little to no up-front cost, fixed monthly loan payments, and a competitive interest rate. You can also add a solar battery, qualify for solar incentives, and potentially build property value.</p>
+        <!-- Monthly Loan Modal -->
+        <div class="modal fade" id="monthlyLoan" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Monthly Solar Loan from Off Grid Energy</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mb-4" src="img/carousel-2.jpg" alt="">
+                        <p>Purchasing your own home solar system is within reach. When you go solar with Off Grid Energy's monthly solar loan, cost doesn't have to be a barrier. You can get a custom solar system with little to no up-front cost, fixed monthly loan payments, and a competitive interest rate. You can also add a solar battery, qualify for solar incentives, and potentially build property value.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal -->
+        <!-- Modal -->
 
-    <!-- Full Lease Modal -->
-    <div class="modal fade" id="fullLease" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Prepaid Solar Lease from Off Grid Energy</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img class="img-fluid mb-4" src="img/pic4.jpg" alt="">
-                    <p>Peace of mind is within reach. In the face of rising energy costs, extreme weather events, and unpredictable power outages, we can put the power back in your hands with a full amount solar lease. With one single payment, you can lock in 25 years of clean and resilient solar power, along with our industry-leading performance guarantee. You can also add a solar battery to get protection during blackouts.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-
-    <!-- Full Purchase Modal -->
-    <div class="modal fade" id="fullPurchase" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Purchase Solar Panels from Off Grid Energy</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img class="img-fluid mb-4" src="img/pic5.jpg" alt="">
-                    <p>In times of increasing uncertainty, now's your chance to take control. Off Grid Energy is here to help you design a custom solar system that meets your family's unique energy needs. We believe home solar panels and battery storage should maximize quality, efficiency, and affordability. When you design your solar system and battery storage with Off Grid Energy, you can enjoy peace of mind with clean, reliable back-up power on your terms. You may also qualify for solar incentives and potentially build property value.</p>
+        <!-- Full Lease Modal -->
+        <div class="modal fade" id="fullLease" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Prepaid Solar Lease from Off Grid Energy</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mb-4" src="img/pic4.jpg" alt="">
+                        <p>Peace of mind is within reach. In the face of rising energy costs, extreme weather events, and unpredictable power outages, we can put the power back in your hands with a full amount solar lease. With one single payment, you can lock in 25 years of clean and resilient solar power, along with our industry-leading performance guarantee. You can also add a solar battery to get protection during blackouts.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal -->
+        <!-- Modal -->
 
-    <!-- Monthly Lease Modal -->
-    <div class="modal fade" id="monthlySolarLease" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">Monthly Solar Lease from Off Grid Energy</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img class="img-fluid mb-4" src="img/pic3.jpg" alt="">
-                    <p>Solar power and battery storage don't have to come at a premium. With utility rates and blackouts on the rise, you deserve control and confidence over your electricity. That's why Off Grid Energy's monthly solar lease plan offers predictable rates while providing clean, affordable, and resilient energy with little to no up-front costs. It includes our industry-leading Off Grid Energy Solar Guarantee for maximum peace of mind. You can also add a solar battery to get protection during blackouts.</p>
+        <!-- Full Purchase Modal -->
+        <div class="modal fade" id="fullPurchase" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Purchase Solar Panels from Off Grid Energy</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mb-4" src="img/pic5.jpg" alt="">
+                        <p>In times of increasing uncertainty, now's your chance to take control. Off Grid Energy is here to help you design a custom solar system that meets your family's unique energy needs. We believe home solar panels and battery storage should maximize quality, efficiency, and affordability. When you design your solar system and battery storage with Off Grid Energy, you can enjoy peace of mind with clean, reliable back-up power on your terms. You may also qualify for solar incentives and potentially build property value.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Modal -->
+        <!-- Modal -->
 
-    <!-- Scroll to Bottom -->
-    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+        <!-- Monthly Lease Modal -->
+        <div class="modal fade" id="monthlySolarLease" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Monthly Solar Lease from Off Grid Energy</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="img-fluid mb-4" src="img/pic3.jpg" alt="">
+                        <p>Solar power and battery storage don't have to come at a premium. With utility rates and blackouts on the rise, you deserve control and confidence over your electricity. That's why Off Grid Energy's monthly solar lease plan offers predictable rates while providing clean, affordable, and resilient energy with little to no up-front costs. It includes our industry-leading Off Grid Energy Solar Guarantee for maximum peace of mind. You can also add a solar battery to get protection during blackouts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+        <!-- Scroll to Bottom -->
+        <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-    <!-- Contact Javascript -->
-    <script>
-        !function(a){var e=[],t={options:{prependExistingHelpBlock:!1,sniffHtml:!0,preventSubmit:!0,submitError:!1,submitSuccess:!1,semanticallyStrict:!1,autoAdd:{helpBlocks:!0},filter:function(){return!0}},methods:{init:function(o){var r=a.extend(!0,{},t);r.options=a.extend(!0,r.options,o);var l=a.unique(this.map(function(){return a(this).parents("form")[0]}).toArray());return a(l).bind("submit",function(e){var t=a(this),i=0,n=t.find("input,textarea,select").not("[type=submit],[type=image]").filter(r.options.filter);n.trigger("submit.validation").trigger("validationLostFocus.validation"),n.each(function(e,t){var n=a(t).parents(".control-group").first();n.hasClass("warning")&&(n.removeClass("warning").addClass("error"),i++)}),n.trigger("validationLostFocus.validation"),i?(r.options.preventSubmit&&e.preventDefault(),t.addClass("error"),a.isFunction(r.options.submitError)&&r.options.submitError(t,e,n.jqBootstrapValidation("collectErrors",!0))):(t.removeClass("error"),a.isFunction(r.options.submitSuccess)&&r.options.submitSuccess(t,e))}),this.each(function(){var t=a(this),o=t.parents(".control-group").first(),l=o.find(".help-block").first(),s=t.parents("form").first(),d=[];if(!l.length&&r.options.autoAdd&&r.options.autoAdd.helpBlocks&&(l=a('<div class="help-block" />'),o.find(".controls").append(l),e.push(l[0])),r.options.sniffHtml){var c="";if(void 0!==t.attr("pattern")&&(c="Not in the expected format\x3c!-- data-validation-pattern-message to override --\x3e",t.data("validationPatternMessage")&&(c=t.data("validationPatternMessage")),t.data("validationPatternMessage",c),t.data("validationPatternRegex",t.attr("pattern"))),void 0!==t.attr("max")||void 0!==t.attr("aria-valuemax")){var v=void 0!==t.attr("max")?t.attr("max"):t.attr("aria-valuemax");c="Too high: Maximum of '"+v+"'\x3c!-- data-validation-max-message to override --\x3e",t.data("validationMaxMessage")&&(c=t.data("validationMaxMessage")),t.data("validationMaxMessage",c),t.data("validationMaxMax",v)}if(void 0!==t.attr("min")||void 0!==t.attr("aria-valuemin")){var u=void 0!==t.attr("min")?t.attr("min"):t.attr("aria-valuemin");c="Too low: Minimum of '"+u+"'\x3c!-- data-validation-min-message to override --\x3e",t.data("validationMinMessage")&&(c=t.data("validationMinMessage")),t.data("validationMinMessage",c),t.data("validationMinMin",u)}void 0!==t.attr("maxlength")&&(c="Too long: Maximum of '"+t.attr("maxlength")+"' characters\x3c!-- data-validation-maxlength-message to override --\x3e",t.data("validationMaxlengthMessage")&&(c=t.data("validationMaxlengthMessage")),t.data("validationMaxlengthMessage",c),t.data("validationMaxlengthMaxlength",t.attr("maxlength"))),void 0!==t.attr("minlength")&&(c="Too short: Minimum of '"+t.attr("minlength")+"' characters\x3c!-- data-validation-minlength-message to override --\x3e",t.data("validationMinlengthMessage")&&(c=t.data("validationMinlengthMessage")),t.data("validationMinlengthMessage",c),t.data("validationMinlengthMinlength",t.attr("minlength"))),void 0===t.attr("required")&&void 0===t.attr("aria-required")||(c=r.builtInValidators.required.message,t.data("validationRequiredMessage")&&(c=t.data("validationRequiredMessage")),t.data("validationRequiredMessage",c)),void 0!==t.attr("type")&&"number"===t.attr("type").toLowerCase()&&(c=r.builtInValidators.number.message,t.data("validationNumberMessage")&&(c=t.data("validationNumberMessage")),t.data("validationNumberMessage",c)),void 0!==t.attr("type")&&"email"===t.attr("type").toLowerCase()&&(c="Not a valid email address\x3c!-- data-validator-validemail-message to override --\x3e",t.data("validationValidemailMessage")?c=t.data("validationValidemailMessage"):t.data("validationEmailMessage")&&(c=t.data("validationEmailMessage")),t.data("validationValidemailMessage",c)),void 0!==t.attr("minchecked")&&(c="Not enough options checked; Minimum of '"+t.attr("minchecked")+"' required\x3c!-- data-validation-minchecked-message to override --\x3e",t.data("validationMincheckedMessage")&&(c=t.data("validationMincheckedMessage")),t.data("validationMincheckedMessage",c),t.data("validationMincheckedMinchecked",t.attr("minchecked"))),void 0!==t.attr("maxchecked")&&(c="Too many options checked; Maximum of '"+t.attr("maxchecked")+"' required\x3c!-- data-validation-maxchecked-message to override --\x3e",t.data("validationMaxcheckedMessage")&&(c=t.data("validationMaxcheckedMessage")),t.data("validationMaxcheckedMessage",c),t.data("validationMaxcheckedMaxchecked",t.attr("maxchecked")))}void 0!==t.data("validation")&&(d=t.data("validation").split(",")),a.each(t.data(),function(a,e){var t=a.replace(/([A-Z])/g,",$1").split(",");"validation"===t[0]&&t[1]&&d.push(t[1])});var m=d,g=[];do{a.each(d,function(a,e){d[a]=i(e)}),d=a.unique(d),g=[],a.each(m,function(e,n){if(void 0!==t.data("validation"+n+"Shortcut"))a.each(t.data("validation"+n+"Shortcut").split(","),function(a,e){g.push(e)});else if(r.builtInValidators[n.toLowerCase()]){var o=r.builtInValidators[n.toLowerCase()];"shortcut"===o.type.toLowerCase()&&a.each(o.shortcut.split(","),function(a,e){e=i(e),g.push(e),d.push(e)})}}),m=g}while(m.length>0);var h={};a.each(d,function(e,n){var o=t.data("validation"+n+"Message"),l=void 0!==o,s=!1;if(o=o||"'"+n+"' validation failed \x3c!-- Add attribute 'data-validation-"+n.toLowerCase()+"-message' to input to change this message --\x3e",a.each(r.validatorTypes,function(e,r){void 0===h[e]&&(h[e]=[]),s||void 0===t.data("validation"+n+i(r.name))||(h[e].push(a.extend(!0,{name:i(r.name),message:o},r.init(t,n))),s=!0)}),!s&&r.builtInValidators[n.toLowerCase()]){var d=a.extend(!0,{},r.builtInValidators[n.toLowerCase()]);l&&(d.message=o);var c=d.type.toLowerCase();"shortcut"===c?s=!0:a.each(r.validatorTypes,function(e,o){void 0===h[e]&&(h[e]=[]),s||c!==e.toLowerCase()||(t.data("validation"+n+i(o.name),d[o.name.toLowerCase()]),h[c].push(a.extend(d,o.init(t,n))),s=!0)})}s||a.error("Cannot find validation info for '"+n+"'")}),l.data("original-contents",l.data("original-contents")?l.data("original-contents"):l.html()),l.data("original-role",l.data("original-role")?l.data("original-role"):l.attr("role")),o.data("original-classes",o.data("original-clases")?o.data("original-classes"):o.attr("class")),t.data("original-aria-invalid",t.data("original-aria-invalid")?t.data("original-aria-invalid"):t.attr("aria-invalid")),t.bind("validation.validation",function(e,i){var o=n(t),l=[];return a.each(h,function(e,n){(o||o.length||i&&i.includeEmpty||r.validatorTypes[e].blockSubmit&&i&&i.submitting)&&a.each(n,function(a,i){r.validatorTypes[e].validate(t,o,i)&&l.push(i.message)})}),l}),t.bind("getValidators.validation",function(){return h}),t.bind("submit.validation",function(){return t.triggerHandler("change.validation",{submitting:!0})}),t.bind(["keyup","focus","blur","click","keydown","keypress","change"].join(".validation ")+".validation",function(e,i){var d=n(t),c=[];o.find("input,textarea,select").each(function(e,n){var o=c.length;if(a.each(a(n).triggerHandler("validation.validation",i),function(a,e){c.push(e)}),c.length>o)a(n).attr("aria-invalid","true");else{var r=t.data("original-aria-invalid");a(n).attr("aria-invalid",void 0!==r&&r)}}),s.find("input,select,textarea").not(t).not('[name="'+t.attr("name")+'"]').trigger("validationLostFocus.validation"),(c=a.unique(c.sort())).length?(o.removeClass("success error").addClass("warning"),r.options.semanticallyStrict&&1===c.length?l.html(c[0]+(r.options.prependExistingHelpBlock?l.data("original-contents"):"")):l.html('<ul role="alert"><li>'+c.join("</li><li>")+"</li></ul>"+(r.options.prependExistingHelpBlock?l.data("original-contents"):""))):(o.removeClass("warning error success"),d.length>0&&o.addClass("success"),l.html(l.data("original-contents"))),"blur"===e.type&&o.removeClass("success")}),t.bind("validationLostFocus.validation",function(){o.removeClass("success")})})},destroy:function(){return this.each(function(){var t=a(this),i=t.parents(".control-group").first(),n=i.find(".help-block").first();t.unbind(".validation"),n.html(n.data("original-contents")),i.attr("class",i.data("original-classes")),t.attr("aria-invalid",t.data("original-aria-invalid")),n.attr("role",t.data("original-role")),e.indexOf(n[0])>-1&&n.remove()})},collectErrors:function(e){var t={};return this.each(function(e,i){var n=a(i),o=n.attr("name"),r=n.triggerHandler("validation.validation",{includeEmpty:!0});t[o]=a.extend(!0,r,t[o])}),a.each(t,function(a,e){0===e.length&&delete t[a]}),t},hasErrors:function(){var e=[];return this.each(function(t,i){e=e.concat(a(i).triggerHandler("getValidators.validation")?a(i).triggerHandler("validation.validation",{submitting:!0}):[])}),e.length>0},override:function(e){t=a.extend(!0,t,e)}},validatorTypes:{callback:{name:"callback",init:function(a,e){return{validatorName:e,callback:a.data("validation"+e+"Callback"),lastValue:a.val(),lastValid:!0,lastFinished:!0}},validate:function(a,e,t){if(t.lastValue===e&&t.lastFinished)return!t.lastValid;if(!0===t.lastFinished){t.lastValue=e,t.lastValid=!0,t.lastFinished=!1;var i=t,n=a;!function(a,e){for(var t=Array.prototype.slice.call(arguments).splice(2),i=a.split("."),n=i.pop(),o=0;o<i.length;o++)e=e[i[o]];e[n].apply(this,t)}(t.callback,window,a,e,function(a){i.lastValue===a.value&&(i.lastValid=a.valid,a.message&&(i.message=a.message),i.lastFinished=!0,n.data("validation"+i.validatorName+"Message",i.message),setTimeout(function(){n.trigger("change.validation")},1))})}return!1}},ajax:{name:"ajax",init:function(a,e){return{validatorName:e,url:a.data("validation"+e+"Ajax"),lastValue:a.val(),lastValid:!0,lastFinished:!0}},validate:function(e,t,i){return""+i.lastValue==""+t&&!0===i.lastFinished?!1===i.lastValid:(!0===i.lastFinished&&(i.lastValue=t,i.lastValid=!0,i.lastFinished=!1,a.ajax({url:i.url,data:"value="+t+"&field="+e.attr("name"),dataType:"json",success:function(a){""+i.lastValue==""+a.value&&(i.lastValid=!!a.valid,a.message&&(i.message=a.message),i.lastFinished=!0,e.data("validation"+i.validatorName+"Message",i.message),setTimeout(function(){e.trigger("change.validation")},1))},failure:function(){i.lastValid=!0,i.message="ajax call failed",i.lastFinished=!0,e.data("validation"+i.validatorName+"Message",i.message),setTimeout(function(){e.trigger("change.validation")},1)}})),!1)}},regex:{name:"regex",init:function(a,e){return{regex:(t=a.data("validation"+e+"Regex"),new RegExp("^"+t+"$"))};var t},validate:function(a,e,t){return!t.regex.test(e)&&!t.negative||t.regex.test(e)&&t.negative}},required:{name:"required",init:function(a,e){return{}},validate:function(a,e,t){return!(0!==e.length||t.negative)||!!(e.length>0&&t.negative)},blockSubmit:!0},match:{name:"match",init:function(a,e){var t=a.parents("form").first().find('[name="'+a.data("validation"+e+"Match")+'"]').first();return t.bind("validation.validation",function(){a.trigger("change.validation",{submitting:!0})}),{element:t}},validate:function(a,e,t){return e!==t.element.val()&&!t.negative||e===t.element.val()&&t.negative},blockSubmit:!0},max:{name:"max",init:function(a,e){return{max:a.data("validation"+e+"Max")}},validate:function(a,e,t){return parseFloat(e,10)>parseFloat(t.max,10)&&!t.negative||parseFloat(e,10)<=parseFloat(t.max,10)&&t.negative}},min:{name:"min",init:function(a,e){return{min:a.data("validation"+e+"Min")}},validate:function(a,e,t){return parseFloat(e)<parseFloat(t.min)&&!t.negative||parseFloat(e)>=parseFloat(t.min)&&t.negative}},maxlength:{name:"maxlength",init:function(a,e){return{maxlength:a.data("validation"+e+"Maxlength")}},validate:function(a,e,t){return e.length>t.maxlength&&!t.negative||e.length<=t.maxlength&&t.negative}},minlength:{name:"minlength",init:function(a,e){return{minlength:a.data("validation"+e+"Minlength")}},validate:function(a,e,t){return e.length<t.minlength&&!t.negative||e.length>=t.minlength&&t.negative}},maxchecked:{name:"maxchecked",init:function(a,e){var t=a.parents("form").first().find('[name="'+a.attr("name")+'"]');return t.bind("click.validation",function(){a.trigger("change.validation",{includeEmpty:!0})}),{maxchecked:a.data("validation"+e+"Maxchecked"),elements:t}},validate:function(a,e,t){return t.elements.filter(":checked").length>t.maxchecked&&!t.negative||t.elements.filter(":checked").length<=t.maxchecked&&t.negative},blockSubmit:!0},minchecked:{name:"minchecked",init:function(a,e){var t=a.parents("form").first().find('[name="'+a.attr("name")+'"]');return t.bind("click.validation",function(){a.trigger("change.validation",{includeEmpty:!0})}),{minchecked:a.data("validation"+e+"Minchecked"),elements:t}},validate:function(a,e,t){return t.elements.filter(":checked").length<t.minchecked&&!t.negative||t.elements.filter(":checked").length>=t.minchecked&&t.negative},blockSubmit:!0}},builtInValidators:{email:{name:"Email",type:"shortcut",shortcut:"validemail"},validemail:{name:"Validemail",type:"regex",regex:"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}",message:"Not a valid email address\x3c!-- data-validator-validemail-message to override --\x3e"},passwordagain:{name:"Passwordagain",type:"match",match:"password",message:"Does not match the given password\x3c!-- data-validator-paswordagain-message to override --\x3e"},positive:{name:"Positive",type:"shortcut",shortcut:"number,positivenumber"},negative:{name:"Negative",type:"shortcut",shortcut:"number,negativenumber"},number:{name:"Number",type:"regex",regex:"([+-]?\\d+(\\.\\d*)?([eE][+-]?[0-9]+)?)?",message:"Must be a number\x3c!-- data-validator-number-message to override --\x3e"},integer:{name:"Integer",type:"regex",regex:"[+-]?\\d+",message:"No decimal places allowed\x3c!-- data-validator-integer-message to override --\x3e"},positivenumber:{name:"Positivenumber",type:"min",min:0,message:"Must be a positive number\x3c!-- data-validator-positivenumber-message to override --\x3e"},negativenumber:{name:"Negativenumber",type:"max",max:0,message:"Must be a negative number\x3c!-- data-validator-negativenumber-message to override --\x3e"},required:{name:"Required",type:"required",message:"This is required\x3c!-- data-validator-required-message to override --\x3e"},checkone:{name:"Checkone",type:"minchecked",minchecked:1,message:"Check at least one option\x3c!-- data-validation-checkone-message to override --\x3e"}}},i=function(a){return a.toLowerCase().replace(/(^|\s)([a-z])/g,function(a,e,t){return e+t.toUpperCase()})},n=function(e){var t=e.val(),i=e.attr("type");return"checkbox"===i&&(t=e.is(":checked")?t:""),"radio"===i&&(t=a('input[name="'+e.attr("name")+'"]:checked').length>0?t:""),t};a.fn.jqBootstrapValidation=function(e){return t.methods[e]?t.methods[e].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof e&&e?(a.error("Method "+e+" does not exist on jQuery.jqBootstrapValidation"),null):t.methods.init.apply(this,arguments)},a.jqBootstrapValidation=function(e){a(":input").not("[type=image],[type=submit]").jqBootstrapValidation.apply(this,arguments)}}(jQuery);
-    </script>
-    <script>
-    $(function () {
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function ($form, event, errors) {
-        },
-        submitSuccess: function ($form, event) {
-            event.preventDefault();
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var subject = $("input#subject").val();
-            var message = $("textarea#message").val();
-
-            $this = $("#sendMessageButton");
-            $this.prop("disabled", true);
-
-            $.ajax({
-                url: "contact.php",
-                type: "POST",
-                data: {
-                    name: name,
-                    email: email,
-                    subject: subject,
-                    message: message
-                },
-                cache: false,
-                success: function () {
-                    $('#success').html("<div class='alert alert-success'>");
-                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                            .append("</button>");
-                    $('#success > .alert-success')
-                            .append("<strong>Your message has been sent. </strong>");
-                    $('#success > .alert-success')
-                            .append('</div>');
-                    $('#contactForm').trigger("reset");
-                },
-                error: function () {
-                    $('#success').html("<div class='alert alert-danger'>");
-                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
-                            .append("</button>");
-                    $('#success > .alert-danger').append($("<strong>").text("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!"));
-                    $('#success > .alert-danger').append('</div>');
-                    $('#contactForm').trigger("reset");
-                },
-                complete: function () {
-                    setTimeout(function () {
-                        $this.prop("disabled", false);
-                    }, 1000);
-                }
+        <!-- Contact Javascript -->
+        <script>
+            !function(a){var e=[],t={options:{prependExistingHelpBlock:!1,sniffHtml:!0,preventSubmit:!0,submitError:!1,submitSuccess:!1,semanticallyStrict:!1,autoAdd:{helpBlocks:!0},filter:function(){return!0}},methods:{init:function(o){var r=a.extend(!0,{},t);r.options=a.extend(!0,r.options,o);var l=a.unique(this.map(function(){return a(this).parents("form")[0]}).toArray());return a(l).bind("submit",function(e){var t=a(this),i=0,n=t.find("input,textarea,select").not("[type=submit],[type=image]").filter(r.options.filter);n.trigger("submit.validation").trigger("validationLostFocus.validation"),n.each(function(e,t){var n=a(t).parents(".control-group").first();n.hasClass("warning")&&(n.removeClass("warning").addClass("error"),i++)}),n.trigger("validationLostFocus.validation"),i?(r.options.preventSubmit&&e.preventDefault(),t.addClass("error"),a.isFunction(r.options.submitError)&&r.options.submitError(t,e,n.jqBootstrapValidation("collectErrors",!0))):(t.removeClass("error"),a.isFunction(r.options.submitSuccess)&&r.options.submitSuccess(t,e))}),this.each(function(){var t=a(this),o=t.parents(".control-group").first(),l=o.find(".help-block").first(),s=t.parents("form").first(),d=[];if(!l.length&&r.options.autoAdd&&r.options.autoAdd.helpBlocks&&(l=a('<div class="help-block" />'),o.find(".controls").append(l),e.push(l[0])),r.options.sniffHtml){var c="";if(void 0!==t.attr("pattern")&&(c="Not in the expected format\x3c!-- data-validation-pattern-message to override --\x3e",t.data("validationPatternMessage")&&(c=t.data("validationPatternMessage")),t.data("validationPatternMessage",c),t.data("validationPatternRegex",t.attr("pattern"))),void 0!==t.attr("max")||void 0!==t.attr("aria-valuemax")){var v=void 0!==t.attr("max")?t.attr("max"):t.attr("aria-valuemax");c="Too high: Maximum of '"+v+"'\x3c!-- data-validation-max-message to override --\x3e",t.data("validationMaxMessage")&&(c=t.data("validationMaxMessage")),t.data("validationMaxMessage",c),t.data("validationMaxMax",v)}if(void 0!==t.attr("min")||void 0!==t.attr("aria-valuemin")){var u=void 0!==t.attr("min")?t.attr("min"):t.attr("aria-valuemin");c="Too low: Minimum of '"+u+"'\x3c!-- data-validation-min-message to override --\x3e",t.data("validationMinMessage")&&(c=t.data("validationMinMessage")),t.data("validationMinMessage",c),t.data("validationMinMin",u)}void 0!==t.attr("maxlength")&&(c="Too long: Maximum of '"+t.attr("maxlength")+"' characters\x3c!-- data-validation-maxlength-message to override --\x3e",t.data("validationMaxlengthMessage")&&(c=t.data("validationMaxlengthMessage")),t.data("validationMaxlengthMessage",c),t.data("validationMaxlengthMaxlength",t.attr("maxlength"))),void 0!==t.attr("minlength")&&(c="Too short: Minimum of '"+t.attr("minlength")+"' characters\x3c!-- data-validation-minlength-message to override --\x3e",t.data("validationMinlengthMessage")&&(c=t.data("validationMinlengthMessage")),t.data("validationMinlengthMessage",c),t.data("validationMinlengthMinlength",t.attr("minlength"))),void 0===t.attr("required")&&void 0===t.attr("aria-required")||(c=r.builtInValidators.required.message,t.data("validationRequiredMessage")&&(c=t.data("validationRequiredMessage")),t.data("validationRequiredMessage",c)),void 0!==t.attr("type")&&"number"===t.attr("type").toLowerCase()&&(c=r.builtInValidators.number.message,t.data("validationNumberMessage")&&(c=t.data("validationNumberMessage")),t.data("validationNumberMessage",c)),void 0!==t.attr("type")&&"email"===t.attr("type").toLowerCase()&&(c="Not a valid email address\x3c!-- data-validator-validemail-message to override --\x3e",t.data("validationValidemailMessage")?c=t.data("validationValidemailMessage"):t.data("validationEmailMessage")&&(c=t.data("validationEmailMessage")),t.data("validationValidemailMessage",c)),void 0!==t.attr("minchecked")&&(c="Not enough options checked; Minimum of '"+t.attr("minchecked")+"' required\x3c!-- data-validation-minchecked-message to override --\x3e",t.data("validationMincheckedMessage")&&(c=t.data("validationMincheckedMessage")),t.data("validationMincheckedMessage",c),t.data("validationMincheckedMinchecked",t.attr("minchecked"))),void 0!==t.attr("maxchecked")&&(c="Too many options checked; Maximum of '"+t.attr("maxchecked")+"' required\x3c!-- data-validation-maxchecked-message to override --\x3e",t.data("validationMaxcheckedMessage")&&(c=t.data("validationMaxcheckedMessage")),t.data("validationMaxcheckedMessage",c),t.data("validationMaxcheckedMaxchecked",t.attr("maxchecked")))}void 0!==t.data("validation")&&(d=t.data("validation").split(",")),a.each(t.data(),function(a,e){var t=a.replace(/([A-Z])/g,",$1").split(",");"validation"===t[0]&&t[1]&&d.push(t[1])});var m=d,g=[];do{a.each(d,function(a,e){d[a]=i(e)}),d=a.unique(d),g=[],a.each(m,function(e,n){if(void 0!==t.data("validation"+n+"Shortcut"))a.each(t.data("validation"+n+"Shortcut").split(","),function(a,e){g.push(e)});else if(r.builtInValidators[n.toLowerCase()]){var o=r.builtInValidators[n.toLowerCase()];"shortcut"===o.type.toLowerCase()&&a.each(o.shortcut.split(","),function(a,e){e=i(e),g.push(e),d.push(e)})}}),m=g}while(m.length>0);var h={};a.each(d,function(e,n){var o=t.data("validation"+n+"Message"),l=void 0!==o,s=!1;if(o=o||"'"+n+"' validation failed \x3c!-- Add attribute 'data-validation-"+n.toLowerCase()+"-message' to input to change this message --\x3e",a.each(r.validatorTypes,function(e,r){void 0===h[e]&&(h[e]=[]),s||void 0===t.data("validation"+n+i(r.name))||(h[e].push(a.extend(!0,{name:i(r.name),message:o},r.init(t,n))),s=!0)}),!s&&r.builtInValidators[n.toLowerCase()]){var d=a.extend(!0,{},r.builtInValidators[n.toLowerCase()]);l&&(d.message=o);var c=d.type.toLowerCase();"shortcut"===c?s=!0:a.each(r.validatorTypes,function(e,o){void 0===h[e]&&(h[e]=[]),s||c!==e.toLowerCase()||(t.data("validation"+n+i(o.name),d[o.name.toLowerCase()]),h[c].push(a.extend(d,o.init(t,n))),s=!0)})}s||a.error("Cannot find validation info for '"+n+"'")}),l.data("original-contents",l.data("original-contents")?l.data("original-contents"):l.html()),l.data("original-role",l.data("original-role")?l.data("original-role"):l.attr("role")),o.data("original-classes",o.data("original-clases")?o.data("original-classes"):o.attr("class")),t.data("original-aria-invalid",t.data("original-aria-invalid")?t.data("original-aria-invalid"):t.attr("aria-invalid")),t.bind("validation.validation",function(e,i){var o=n(t),l=[];return a.each(h,function(e,n){(o||o.length||i&&i.includeEmpty||r.validatorTypes[e].blockSubmit&&i&&i.submitting)&&a.each(n,function(a,i){r.validatorTypes[e].validate(t,o,i)&&l.push(i.message)})}),l}),t.bind("getValidators.validation",function(){return h}),t.bind("submit.validation",function(){return t.triggerHandler("change.validation",{submitting:!0})}),t.bind(["keyup","focus","blur","click","keydown","keypress","change"].join(".validation ")+".validation",function(e,i){var d=n(t),c=[];o.find("input,textarea,select").each(function(e,n){var o=c.length;if(a.each(a(n).triggerHandler("validation.validation",i),function(a,e){c.push(e)}),c.length>o)a(n).attr("aria-invalid","true");else{var r=t.data("original-aria-invalid");a(n).attr("aria-invalid",void 0!==r&&r)}}),s.find("input,select,textarea").not(t).not('[name="'+t.attr("name")+'"]').trigger("validationLostFocus.validation"),(c=a.unique(c.sort())).length?(o.removeClass("success error").addClass("warning"),r.options.semanticallyStrict&&1===c.length?l.html(c[0]+(r.options.prependExistingHelpBlock?l.data("original-contents"):"")):l.html('<ul role="alert"><li>'+c.join("</li><li>")+"</li></ul>"+(r.options.prependExistingHelpBlock?l.data("original-contents"):""))):(o.removeClass("warning error success"),d.length>0&&o.addClass("success"),l.html(l.data("original-contents"))),"blur"===e.type&&o.removeClass("success")}),t.bind("validationLostFocus.validation",function(){o.removeClass("success")})})},destroy:function(){return this.each(function(){var t=a(this),i=t.parents(".control-group").first(),n=i.find(".help-block").first();t.unbind(".validation"),n.html(n.data("original-contents")),i.attr("class",i.data("original-classes")),t.attr("aria-invalid",t.data("original-aria-invalid")),n.attr("role",t.data("original-role")),e.indexOf(n[0])>-1&&n.remove()})},collectErrors:function(e){var t={};return this.each(function(e,i){var n=a(i),o=n.attr("name"),r=n.triggerHandler("validation.validation",{includeEmpty:!0});t[o]=a.extend(!0,r,t[o])}),a.each(t,function(a,e){0===e.length&&delete t[a]}),t},hasErrors:function(){var e=[];return this.each(function(t,i){e=e.concat(a(i).triggerHandler("getValidators.validation")?a(i).triggerHandler("validation.validation",{submitting:!0}):[])}),e.length>0},override:function(e){t=a.extend(!0,t,e)}},validatorTypes:{callback:{name:"callback",init:function(a,e){return{validatorName:e,callback:a.data("validation"+e+"Callback"),lastValue:a.val(),lastValid:!0,lastFinished:!0}},validate:function(a,e,t){if(t.lastValue===e&&t.lastFinished)return!t.lastValid;if(!0===t.lastFinished){t.lastValue=e,t.lastValid=!0,t.lastFinished=!1;var i=t,n=a;!function(a,e){for(var t=Array.prototype.slice.call(arguments).splice(2),i=a.split("."),n=i.pop(),o=0;o<i.length;o++)e=e[i[o]];e[n].apply(this,t)}(t.callback,window,a,e,function(a){i.lastValue===a.value&&(i.lastValid=a.valid,a.message&&(i.message=a.message),i.lastFinished=!0,n.data("validation"+i.validatorName+"Message",i.message),setTimeout(function(){n.trigger("change.validation")},1))})}return!1}},ajax:{name:"ajax",init:function(a,e){return{validatorName:e,url:a.data("validation"+e+"Ajax"),lastValue:a.val(),lastValid:!0,lastFinished:!0}},validate:function(e,t,i){return""+i.lastValue==""+t&&!0===i.lastFinished?!1===i.lastValid:(!0===i.lastFinished&&(i.lastValue=t,i.lastValid=!0,i.lastFinished=!1,a.ajax({url:i.url,data:"value="+t+"&field="+e.attr("name"),dataType:"json",success:function(a){""+i.lastValue==""+a.value&&(i.lastValid=!!a.valid,a.message&&(i.message=a.message),i.lastFinished=!0,e.data("validation"+i.validatorName+"Message",i.message),setTimeout(function(){e.trigger("change.validation")},1))},failure:function(){i.lastValid=!0,i.message="ajax call failed",i.lastFinished=!0,e.data("validation"+i.validatorName+"Message",i.message),setTimeout(function(){e.trigger("change.validation")},1)}})),!1)}},regex:{name:"regex",init:function(a,e){return{regex:(t=a.data("validation"+e+"Regex"),new RegExp("^"+t+"$"))};var t},validate:function(a,e,t){return!t.regex.test(e)&&!t.negative||t.regex.test(e)&&t.negative}},required:{name:"required",init:function(a,e){return{}},validate:function(a,e,t){return!(0!==e.length||t.negative)||!!(e.length>0&&t.negative)},blockSubmit:!0},match:{name:"match",init:function(a,e){var t=a.parents("form").first().find('[name="'+a.data("validation"+e+"Match")+'"]').first();return t.bind("validation.validation",function(){a.trigger("change.validation",{submitting:!0})}),{element:t}},validate:function(a,e,t){return e!==t.element.val()&&!t.negative||e===t.element.val()&&t.negative},blockSubmit:!0},max:{name:"max",init:function(a,e){return{max:a.data("validation"+e+"Max")}},validate:function(a,e,t){return parseFloat(e,10)>parseFloat(t.max,10)&&!t.negative||parseFloat(e,10)<=parseFloat(t.max,10)&&t.negative}},min:{name:"min",init:function(a,e){return{min:a.data("validation"+e+"Min")}},validate:function(a,e,t){return parseFloat(e)<parseFloat(t.min)&&!t.negative||parseFloat(e)>=parseFloat(t.min)&&t.negative}},maxlength:{name:"maxlength",init:function(a,e){return{maxlength:a.data("validation"+e+"Maxlength")}},validate:function(a,e,t){return e.length>t.maxlength&&!t.negative||e.length<=t.maxlength&&t.negative}},minlength:{name:"minlength",init:function(a,e){return{minlength:a.data("validation"+e+"Minlength")}},validate:function(a,e,t){return e.length<t.minlength&&!t.negative||e.length>=t.minlength&&t.negative}},maxchecked:{name:"maxchecked",init:function(a,e){var t=a.parents("form").first().find('[name="'+a.attr("name")+'"]');return t.bind("click.validation",function(){a.trigger("change.validation",{includeEmpty:!0})}),{maxchecked:a.data("validation"+e+"Maxchecked"),elements:t}},validate:function(a,e,t){return t.elements.filter(":checked").length>t.maxchecked&&!t.negative||t.elements.filter(":checked").length<=t.maxchecked&&t.negative},blockSubmit:!0},minchecked:{name:"minchecked",init:function(a,e){var t=a.parents("form").first().find('[name="'+a.attr("name")+'"]');return t.bind("click.validation",function(){a.trigger("change.validation",{includeEmpty:!0})}),{minchecked:a.data("validation"+e+"Minchecked"),elements:t}},validate:function(a,e,t){return t.elements.filter(":checked").length<t.minchecked&&!t.negative||t.elements.filter(":checked").length>=t.minchecked&&t.negative},blockSubmit:!0}},builtInValidators:{email:{name:"Email",type:"shortcut",shortcut:"validemail"},validemail:{name:"Validemail",type:"regex",regex:"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}",message:"Not a valid email address\x3c!-- data-validator-validemail-message to override --\x3e"},passwordagain:{name:"Passwordagain",type:"match",match:"password",message:"Does not match the given password\x3c!-- data-validator-paswordagain-message to override --\x3e"},positive:{name:"Positive",type:"shortcut",shortcut:"number,positivenumber"},negative:{name:"Negative",type:"shortcut",shortcut:"number,negativenumber"},number:{name:"Number",type:"regex",regex:"([+-]?\\d+(\\.\\d*)?([eE][+-]?[0-9]+)?)?",message:"Must be a number\x3c!-- data-validator-number-message to override --\x3e"},integer:{name:"Integer",type:"regex",regex:"[+-]?\\d+",message:"No decimal places allowed\x3c!-- data-validator-integer-message to override --\x3e"},positivenumber:{name:"Positivenumber",type:"min",min:0,message:"Must be a positive number\x3c!-- data-validator-positivenumber-message to override --\x3e"},negativenumber:{name:"Negativenumber",type:"max",max:0,message:"Must be a negative number\x3c!-- data-validator-negativenumber-message to override --\x3e"},required:{name:"Required",type:"required",message:"This is required\x3c!-- data-validator-required-message to override --\x3e"},checkone:{name:"Checkone",type:"minchecked",minchecked:1,message:"Check at least one option\x3c!-- data-validation-checkone-message to override --\x3e"}}},i=function(a){return a.toLowerCase().replace(/(^|\s)([a-z])/g,function(a,e,t){return e+t.toUpperCase()})},n=function(e){var t=e.val(),i=e.attr("type");return"checkbox"===i&&(t=e.is(":checked")?t:""),"radio"===i&&(t=a('input[name="'+e.attr("name")+'"]:checked').length>0?t:""),t};a.fn.jqBootstrapValidation=function(e){return t.methods[e]?t.methods[e].apply(this,Array.prototype.slice.call(arguments,1)):"object"!=typeof e&&e?(a.error("Method "+e+" does not exist on jQuery.jqBootstrapValidation"),null):t.methods.init.apply(this,arguments)},a.jqBootstrapValidation=function(e){a(":input").not("[type=image],[type=submit]").jqBootstrapValidation.apply(this,arguments)}}(jQuery);
+        </script>
+        <script>
+            $(function () {
+                $("#contactForm input, #contactForm textarea").jqBootstrapValidation({
+                    preventSubmit: true,
+                    submitError: function ($form, event, errors) {
+                    },
+                    submitSuccess: function ($form, event) {
+                        event.preventDefault();
+                        var name = $("input#name").val();
+                        var email = $("input#email").val();
+                        var subject = $("input#subject").val();
+                        var message = $("textarea#message").val();
+                        $this = $("#sendMessageButton");
+                        $this.prop("disabled", true);
+                        $.ajax({
+                            url: "contact.php",
+                            type: "POST",
+                            data: {
+                                name: name,
+                                email: email,
+                                subject: subject,
+                                message: message
+                            },
+                            cache: false,
+                            success: function () {
+                                $('#success').html("<div class='alert alert-success'>");
+                                $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                                        .append("</button>");
+                                $('#success > .alert-success')
+                                        .append("<strong>Your message has been sent. </strong>");
+                                $('#success > .alert-success')
+                                        .append('</div>');
+                                $('#contactForm').trigger("reset");
+                            },
+                            error: function () {
+                                $('#success').html("<div class='alert alert-danger'>");
+                                $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                                        .append("</button>");
+                                $('#success > .alert-danger').append($("<strong>").text("Sorry " + name + ", it seems that our mail server is not responding. Please try again later!"));
+                                $('#success > .alert-danger').append('</div>');
+                                $('#contactForm').trigger("reset");
+                            },
+                            complete: function () {
+                                setTimeout(function () {
+                                    $this.prop("disabled", false);
+                                }, 1000);
+                            }
+                        });
+                    },
+                    filter: function () {
+                        return $(this).is(":visible");
+                    },
+                });
+                $("a[data-toggle=\"tab\"]").click(function (e) {
+                    e.preventDefault();
+                    $(this).tab("show");
+                });
             });
-        },
-        filter: function () {
-            return $(this).is(":visible");
-        },
-    });
+            $('#name').focus(function () {
+                $('#success').html('');
+            });
+        </script>
+        <!-- JS Variables -->
+        <script>
+            (function ($){
+                // Company name for legal stuff
+                let companyName = document.getElementsByClassName("companyName");
+                for (let i = 0; i < companyName.length; i++) {
+                    companyName[i].innerHTML = "Off Grid Energy Services";
+                }
+                // The total amount of loan shown
+                let loanAmount = document.getElementsByClassName("loanAmount");
+                for (let i = 0; i < loanAmount.length; i++) {
+                    loanAmount[i].innerHTML = "69,345";
+                }
+                // How many years the loan would be for
+                let loanYears = document.getElementsByClassName("loanYears");
+                for (let i = 0; i < loanYears.length; i++) {
+                    loanYears[i].innerHTML = "25";
+                    loanYearsNum = +loanYears[i].innerHTML;
+                }
+                // How many months the loan would be for based on the years provided
+                let loanMonths = document.getElementsByClassName("loanMonths");
+                for (let i = 0; i < loanMonths.length; i++) {
+                    loanMonths[i].innerHTML = loanYearsNum * 12;
+                }
+                // The apr of the loan
+                let apr = document.getElementsByClassName("apr");
+                for (let i = 0; i < apr.length; i++) {
+                    apr[i].innerHTML = "1.99";
+                }
+                // The pre incentive rate
+                let preIncentive = document.getElementsByClassName("preIncentive");
+                for (let i = 0; i < preIncentive.length; i++) {
+                    preIncentive[i].innerHTML = "209.01";
+                }
+                // The monthly payment total
+                let monthlyTotal = document.getElementsByClassName("monthlyTotal");
+                for (let i = 0; i < monthlyTotal.length; i++) {
+                    monthlyTotal[i].innerHTML = "223.06";
+                }
+                // Without incentives rate
+                let withoutIncentive = document.getElementsByClassName("withoutIncentive");
+                for (let i = 0; i < withoutIncentive.length; i++) {
+                    withoutIncentive[i].innerHTML = "301.44";
+                }
+                // Federal ITC incentive
+                let itc = document.getElementsByClassName("itc");
+                for (let i = 0; i < itc.length; i++) {
+                    itc[i].innerHTML = "18,029.70";
+                }
+                // The estimated existing utility bill
+                let monthlyPowerBill = document.getElementsByClassName("monthlyPowerBill");
+                for (let i = 0; i < monthlyPowerBill.length; i++) {
+                    monthlyPowerBill[i].innerHTML = "262";
+                }
+                // The estimated new monthly bill
+                let newMonthlyBill = document.getElementsByClassName("newMonthlyBill");
+                for (let i = 0; i < newMonthlyBill.length; i++) {
+                    newMonthlyBill[i].innerHTML = "209.01";
+                }
 
-    $("a[data-toggle=\"tab\"]").click(function (e) {
-        e.preventDefault();
-        $(this).tab("show");
-    });
-    });
-    $('#name').focus(function () {
-    $('#success').html('');
-    });
+                // Monthly Cost Variables
+                // Showing the current different cost with/without solar
+                let preSolar = document.getElementsByClassName("preSolar");
+                for (let i = 0; i < preSolar.length; i++) {
+                    preSolar[i].innerHTML = "262";
+                    preSolarNum = +preSolar[i].innerHTML;
+                }
+                let postSolar = document.getElementsByClassName("postSolar");
+                for (let i = 0; i < postSolar.length; i++) {
+                    postSolar[i].innerHTML = "0";
+                    postSolarNum = +postSolar[i].innerHTML;
+                }
+                let difference = document.getElementsByClassName("difference");
+                for (let i = 0; i < difference.length; i++) {
+                    difference[i].innerHTML = preSolarNum - postSolarNum;
+                }
 
-    </script>
+                // 5 Year Monthly Cost Variables
+                // Showing the 5 year different cost with/without solar
+                let preSolar60 = document.getElementsByClassName("preSolar60");
+                for (let i = 0; i < preSolar60.length; i++) {
+                    preSolar60[i].innerHTML = "294";
+                    preSolar60Num = +preSolar60[i].innerHTML;
+                }
+                let postSolar60 = document.getElementsByClassName("postSolar60");
+                for (let i = 0; i < postSolar60.length; i++) {
+                    postSolar60[i].innerHTML = "22";
+                    postSolar60Num = +postSolar60[i].innerHTML;
+                }
+                let difference60 = document.getElementsByClassName("difference60");
+                for (let i = 0; i < difference60.length; i++) {
+                    difference60[i].innerHTML = preSolar60Num - postSolar60Num;
+                }
 
-    <script src="js/main.js"></script>
+                // 25 Year Monthly Cost Variables
+                // Showing the 25 year different cost with/without solar
+                let preSolar300 = document.getElementsByClassName("preSolar300");
+                for (let i = 0; i < preSolar300.length; i++) {
+                    preSolar300[i].innerHTML = "659";
+                    preSolar300Num = +preSolar300[i].innerHTML;
+                }
+                let postSolar300 = document.getElementsByClassName("postSolar300");
+                for (let i = 0; i < postSolar300.length; i++) {
+                    postSolar300[i].innerHTML = "87";
+                    postSolar300Num = +postSolar300[i].innerHTML;
+                }
+                let difference300 = document.getElementsByClassName("difference300");
+                for (let i = 0; i < difference300.length; i++) {
+                    difference300[i].innerHTML = preSolar300Num - postSolar300Num;
+                }
 
-    <!-- JS -->
-    <script>
-        (function ($){
-            // Company name for legal stuff
-            let companyName = document.getElementsByClassName("companyName");
-            for (let i = 0; i < companyName.length; i++) {
-                companyName[i].innerHTML = "Off Grid Energy";
-            }
-            // The total amount of loan shown
-            let loanAmount = document.getElementsByClassName("loanAmount");
-            for (let i = 0; i < loanAmount.length; i++) {
-                loanAmount[i].innerHTML = "69,345";
-            }
-            // How many years the loan would be for
-            let loanYears = document.getElementsByClassName("loanYears");
-            for (let i = 0; i < loanYears.length; i++) {
-                loanYears[i].innerHTML = "25";
-                loanYearsNum = +loanYears[i].innerHTML;
-            }
-            // How many months the loan would be for based on the years provided
-            let loanMonths = document.getElementsByClassName("loanMonths");
-            for (let i = 0; i < loanMonths.length; i++) {
-                loanMonths[i].innerHTML = loanYearsNum * 12;
-            }
-            // The apr of the loan
-            let apr = document.getElementsByClassName("apr");
-            for (let i = 0; i < apr.length; i++) {
-                apr[i].innerHTML = "1.99";
-            }
-            // The pre incentive rate
-            let preIncentive = document.getElementsByClassName("preIncentive");
-            for (let i = 0; i < preIncentive.length; i++) {
-                preIncentive[i].innerHTML = "209.01";
-            }
-            // The monthly payment total
-            let monthlyTotal = document.getElementsByClassName("monthlyTotal");
-            for (let i = 0; i < monthlyTotal.length; i++) {
-                monthlyTotal[i].innerHTML = "223.06";
-            }
-            // Without incentives rate
-            let withoutIncentive = document.getElementsByClassName("withoutIncentive");
-            for (let i = 0; i < withoutIncentive.length; i++) {
-                withoutIncentive[i].innerHTML = "301.44";
-            }
-            // Federal ITC incentive
-            let itc = document.getElementsByClassName("itc");
-            for (let i = 0; i < itc.length; i++) {
-                itc[i].innerHTML = "18,029.70";
-            }
-            // The estimated existing utility bill
-            let monthlyPowerBill = document.getElementsByClassName("monthlyPowerBill");
-            for (let i = 0; i < monthlyPowerBill.length; i++) {
-                monthlyPowerBill[i].innerHTML = "262";
-            }
-            // The estimated new monthly bill
-            let newMonthlyBill = document.getElementsByClassName("newMonthlyBill");
-            for (let i = 0; i < newMonthlyBill.length; i++) {
-                newMonthlyBill[i].innerHTML = "209.01";
-            }
-
-            // Monthly Cost Variables
-            // Showing the current different cost with/without solar
-            let preSolar = document.getElementsByClassName("preSolar");
-            for (let i = 0; i < preSolar.length; i++) {
-                preSolar[i].innerHTML = "262";
-                preSolarNum = +preSolar[i].innerHTML;
-            }
-            let postSolar = document.getElementsByClassName("postSolar");
-            for (let i = 0; i < postSolar.length; i++) {
-                postSolar[i].innerHTML = "0";
-                postSolarNum = +postSolar[i].innerHTML;
-            }
-            let difference = document.getElementsByClassName("difference");
-            for (let i = 0; i < difference.length; i++) {
-                difference[i].innerHTML = preSolarNum - postSolarNum;
-            }
-
-            // 5 Year Monthly Cost Variables
-            // Showing the 5 year different cost with/without solar
-            let preSolar60 = document.getElementsByClassName("preSolar60");
-            for (let i = 0; i < preSolar60.length; i++) {
-                preSolar60[i].innerHTML = "299";
-                preSolar60Num = +preSolar60[i].innerHTML;
-            }
-            let postSolar60 = document.getElementsByClassName("postSolar60");
-            for (let i = 0; i < postSolar60.length; i++) {
-                postSolar60[i].innerHTML = "8";
-                postSolar60Num = +postSolar60[i].innerHTML;
-            }
-            let difference60 = document.getElementsByClassName("difference60");
-            for (let i = 0; i < difference60.length; i++) {
-                difference60[i].innerHTML = preSolar60Num - postSolar60Num;
-            }
-
-            // 25 Year Monthly Cost Variables
-            // Showing the 25 year different cost with/without solar
-            let preSolar300 = document.getElementsByClassName("preSolar300");
-            for (let i = 0; i < preSolar300.length; i++) {
-                preSolar300[i].innerHTML = "659";
-                preSolar300Num = +preSolar300[i].innerHTML;
-            }
-            let postSolar300 = document.getElementsByClassName("postSolar300");
-            for (let i = 0; i < postSolar300.length; i++) {
-                postSolar300[i].innerHTML = "87";
-                postSolar300Num = +postSolar300[i].innerHTML;
-            }
-            let difference300 = document.getElementsByClassName("difference300");
-            for (let i = 0; i < difference300.length; i++) {
-                difference300[i].innerHTML = preSolar300Num - postSolar300Num;
-            }
-
-            // System size under System Design
-            let systemSize = document.getElementsByClassName("systemSize");
-            for (let i = 0; i < systemSize.length; i++) {
-                systemSize[i].innerHTML = "17.020";
-            }
-            // Estimated Monthly Production under System Design
-            let estMonthProd = document.getElementsByClassName("estMonthProd");
-            for (let i = 0; i < estMonthProd.length; i++) {
-                estMonthProd[i].innerHTML = "25,326";
-            }
-            // Utility bill offset under System Design
-            let utilityBillOffset = document.getElementsByClassName("utilityBillOffset");
-            for (let i = 0; i < utilityBillOffset.length; i++) {
-                utilityBillOffset[i].innerHTML = "100";
-            }
-        })(jQuery);
-    </script>
-</body>
-
+                // System size under System Design
+                let systemSize = document.getElementsByClassName("systemSize");
+                for (let i = 0; i < systemSize.length; i++) {
+                    systemSize[i].innerHTML = "17.020";
+                }
+                // Estimated Monthly Production under System Design
+                let estMonthProd = document.getElementsByClassName("estMonthProd");
+                for (let i = 0; i < estMonthProd.length; i++) {
+                    estMonthProd[i].innerHTML = "25,326";
+                }
+                // Utility bill offset under System Design
+                let utilityBillOffset = document.getElementsByClassName("utilityBillOffset");
+                for (let i = 0; i < utilityBillOffset.length; i++) {
+                    utilityBillOffset[i].innerHTML = "100";
+                }
+            })(jQuery);
+        </script>
+        <script>
+            (function ($) {
+                "use strict";
+                // Navbar on scrolling
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('.navbar').fadeIn('slow').css('display', 'flex');
+                    } else {
+                        $('.navbar').fadeOut('slow').css('display', 'none');
+                    }
+                });
+                // Smooth scrolling on the navbar links
+                $(".navbar-nav a, .btn-scroll").on('click', function (event) {
+                    if (this.hash !== "") {
+                        event.preventDefault();
+                        
+                        $('html, body').animate({
+                            scrollTop: $(this.hash).offset().top - 45
+                        }, 1500, 'easeInOutExpo');
+                        
+                        if ($(this).parents('.navbar-nav').length) {
+                            $('.navbar-nav .active').removeClass('active');
+                            $(this).closest('a').addClass('active');
+                        }
+                    }
+                });
+                // Scroll to Bottom
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        $('.scroll-to-bottom').fadeOut('slow');
+                    } else {
+                        $('.scroll-to-bottom').fadeIn('slow');
+                    }
+                });
+                // Back to top button
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 200) {
+                        $('.back-to-top').fadeIn('slow');
+                    } else {
+                        $('.back-to-top').fadeOut('slow');
+                    }
+                });
+                $('.back-to-top').click(function () {
+                    $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+                    return false;
+                });
+                // Gallery carousel
+                $(".gallery-carousel").owlCarousel({
+                    autoplay: false,
+                    smartSpeed: 1500,
+                    dots: false,
+                    loop: true,
+                    nav : true,
+                    navText : [
+                        '<i class="fa fa-angle-left" aria-hidden="true"></i>',
+                        '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+                    ],
+                    responsive: {
+                        0:{
+                            items:1
+                        },
+                        576:{
+                            items:2
+                        },
+                        768:{
+                            items:3
+                        },
+                        992:{
+                            items:4
+                        },
+                        1200:{
+                            items:5
+                        }
+                    }
+                });
+            })(jQuery);
+        </script>
+    </body>
 </html>
